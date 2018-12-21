@@ -5,3 +5,33 @@ git使用参考廖雪峰网站https://www.liaoxuefeng.com
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 
+
+git其他命令
+
+git rm -r -n --cached 文件/文件夹名称 
+ 
+加上 -n 这个参数，执行命令时，是不会删除任何文件，而是展示此命令要删除的文件列表预览。
+
+
+git rm -r --cached a/2.txt //删除a目录下的2.txt文件
+git rm -r --cached a    //删除a目录
+git rm filename         //（同时在缓存和物理存储中删除文件，慎用）
+git rm --cache filename //（只在缓存中删除对应的文件）
+
+用-r参数删除目录, git rm --cached a.txt 删除的是本地仓库中的文件，且本地工作区的文件会保留且不再与远程仓库发生跟踪关系，
+如果本地仓库中的文件也要删除则用git rm a.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
