@@ -1,1 +1,7 @@
 git使用参考廖雪峰网站https://www.liaoxuefeng.com
+
+安装后配置全局个人仓库
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
