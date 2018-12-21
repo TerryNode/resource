@@ -337,11 +337,11 @@ git remote rename 原来的标识 新的标识
 
 添加一个本地仓库到不同的远程仓库时，只需要在关联时用不同的远程仓库名来进行标识
 
-git remote add GitHub git@gitee.com:账户名/仓库名.git：与本地已有仓库关联
-git remote add Gitee git@gitee.com:账户名/仓库名.git：与本地已有仓库关联
+git remote add gitHub git@gitee.com:账户名/仓库名.git：与本地已有仓库关联
+git remote add gitee git@gitee.com:账户名/仓库名.git：与本地已有仓库关联
 
-git push github master：推送到GitHub的master分支
-git push gitee master：推送到Gitee的master分支
+git push github master：推送到gitHub的master分支
+git push gitee master：推送到gitee的master分支
 
 
 -----自定义Git-----
