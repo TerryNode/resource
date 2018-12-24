@@ -59,7 +59,7 @@ rm filename：直接用Linux命令rm删除文件，删除的是磁盘文件，�
 
 git rm filename：从版本库中删除，再commit，包括暂存区和磁盘(工作区)
 
-git rm --cache filename：从暂存区中删除，磁盘(工作区)的还在
+git rm --cached filename：从暂存区中删除，磁盘(工作区)的还在
 
 一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
 
