@@ -1,0 +1,43 @@
+git使用参考廖雪峰网站https://www.liaoxuefeng.com
+
+安装后配置全局个人仓库信息
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+生成SSH Key
+
+ssh-keygen -t rsa -C "youremail@example.com"
+
+密钥类型可以用 -t 选项指定。如果没有指定则默认生成用于SSH-2的RSA密钥。这里使用的是rsa。
+同时在密钥中有一个注释字段，用-C来指定所指定的注释，可以方便用户标识这个密钥，指出密钥的用途或其他有用的信息。所以在这里输入自己的邮箱或者其他都行。
+输入完毕后程序同时要求输入一个密语字符串(passphrase)，空表示没有密语。接着会让输入2次口令(password)，空表示没有口令。3次回车即可完成当前步骤，
+此时[c盘>用户>自己的用户名>.ssh]目录下已经生成好了。
+
+git其他命令
+
+git rm -r -n --cached 文件/文件夹名称 
+ 
+加上 -n 这个参数，执行命令时，是不会删除任何文件，而是展示此命令要删除的文件列表预览。
+
+
+git rm -r --cached a/2.txt //删除a目录下的2.txt文件
+git rm -r --cached a    //删除a目录
+git rm filename         //（同时在缓存和物理存储中删除文件，彻底删除，慎用）
+git rm --cache filename //（只在缓存中删除对应的文件，且本地工作区的文件会保留且不再与远程仓库发生跟踪关系）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
