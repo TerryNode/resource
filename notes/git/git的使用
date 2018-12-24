@@ -24,7 +24,7 @@ git log：查看历史纪录，加上--pretty=oneline参数可以简化输出
 
 -----版本回退-----
 
-git reset --hard HEAD^：回退到上一个版本，HEAD^5回退到往前第五个版本
+git reset --hard HEAD^：回退到上一个版本，HEAD^^上上版本，版本过多用HEAD~n表示，HEAD~5回退到往前第五个版本
 
 git reset --hard dsaf：回退到dsaf版本，可以只写版本号的前几位
 
